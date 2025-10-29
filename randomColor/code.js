@@ -96,12 +96,18 @@ clear.addEventListener("click", () => {
 
 })
 clipboard.addEventListener("click", () => {
-    navigator.clipboard.writeText(text)
-        .then(() => {
-            alert(tekst,"was copied to you clipboard");
-        })
-        .catch(err => {
-            console.error('Failed to copy: ', err);
-        });
-
+    let tekst = canvas.textContent
+    if (tekst != "") {
+        
+        navigator.clipboard.writeText(tekst)
+            .then(() => {
+                alert(`"${tekst}" was copied to clipboard`);
+            })
+            .catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+    }
+    else{
+        alert("no color to copy")
+    }
 })
