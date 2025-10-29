@@ -1,0 +1,73 @@
+.main {
+    position: relative;
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 10vh;
+
+    text-align: center;
+
+    background-color: rgb(196, 196, 196);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.linkareas {
+    background-color: rgb(155, 155, 155);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding-bottom: 8px;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.linkbit {
+    background-color: gray;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 9px;
+padding-bottom: 2px;
+padding-top: 2px;
+}
+.back{
+    position: fixed;
+    top:0;
+    right: 0;
+    padding-right: 10px;
+}
+.canvas{
+    margin: 0 auto;
+    width: 40%;
+    height: 50px;
+    background-color: azure;
+    border: dotted black 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clog{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4px;
+}
+.color_editor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 15px;
+}
+.listcolor{
+    background-color: rgb(153, 163, 173);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.listcolor:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
