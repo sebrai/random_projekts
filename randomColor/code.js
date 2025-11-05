@@ -75,6 +75,8 @@ button.addEventListener("click", () => {
     const item = document.createElement("li")
     item.appendChild(tekst)
     item.className = "listcolor"
+    item.style.borderColor = c
+    item.style.color = c
     item.addEventListener("click", () => {
         canvas.style.backgroundColor = item.textContent
         canvas.textContent = item.textContent
