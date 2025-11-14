@@ -1,6 +1,6 @@
 :root{
-    --blue: rgb(39,14,146);
-    --offwhite: rgb(236, 227, 173);
+    --blue: cadetblue;
+    --offwhite: beige;
 }
 body{
     background-color: var(--offwhite);

@@ -1,0 +1,29 @@
+:root{
+    --blue: cadetblue;
+    --offwhite: beige;
+}
+.cont{ display: flex;
+    background-color: var(--blue);
+    border-radius: 40px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+body{
+    background-color: var(--offwhite);
+}
+a{
+    color: var(--blue);
+    text-decoration: none;
+}
+.back {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 10px;
+}
