@@ -8,8 +8,7 @@ let colorlog = []
 const hexval = "0123456789ABCDEF"
 function randhex() {
     let num = Math.floor(Math.random() * hexval.length)
-    let result = hexval[num]
-    return result
+    return hexval[num]
 }
 function getcolor() {
     let result = "#"
