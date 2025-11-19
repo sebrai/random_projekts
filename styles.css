@@ -68,7 +68,7 @@ a{
     transition: all 0.2s;
 }
 
-.canvas {
+.color_display {
     margin: 0 auto;
     width: 40%;
     height: 50px;
@@ -80,7 +80,7 @@ a{
     align-items: center;
 }
 
-.clog {
+.color_log {
     display: flex;
     flex-direction: column-reverse;
     gap: 4px;

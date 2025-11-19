@@ -1,7 +1,7 @@
 
-let button = document.getElementById("button")
-let canvas = document.getElementById("canvas")
-let clog = document.getElementById("clog")
+let generate = document.getElementById("generate")
+let color_display = document.getElementById("color_display")
+let color_log = document.getElementById("color_log")
 let clear = document.getElementById("clear")
 let clipboard = document.getElementById("clipboard")
 let colorlog = []
@@ -61,14 +61,14 @@ function isColorLightOrDark(color) {
     }
 }
 
-button.addEventListener("click", () => {
+generate.addEventListener("click", () => {
     const c = newcolor()
-    canvas.style.backgroundColor = c
-    canvas.textContent = c
+    color_display.style.backgroundColor = c
+    color_display.textContent = c
     if (isColorLightOrDark(c)) {
-        canvas.style.color = "black"
+        color_display.style.color = "black"
     } else {
-        canvas.style.color = "white"
+        color_display.style.color = "white"
     }
     const tekst = document.createTextNode(c)
     const item = document.createElement("li")
@@ -80,27 +80,27 @@ button.addEventListener("click", () => {
     item.style.borderColor = c
     item.style.color = c
     item.addEventListener("click", () => {
-        canvas.style.backgroundColor = item.textContent
-        canvas.textContent = item.textContent
+        color_display.style.backgroundColor = item.textContent
+        color_display.textContent = item.textContent
         if (isColorLightOrDark(item.textContent)) {
-            canvas.style.color = "black"
+            color_display.style.color = "black"
         } else {
-            canvas.style.color = "white"
+            color_display.style.color = "white"
         }
     })
-    clog.appendChild(item)
+    color_log.appendChild(item)
 })
 clear.addEventListener("click", () => {
     colorlog = []
-    while (clog.firstChild) {
-        clog.removeChild(clog.firstChild)
+    while (color_log.firstChild) {
+        color_log.removeChild(color_log.firstChild)
     }
-    canvas.style.backgroundColor = "azure"
-    canvas.textContent = ""
+    color_display.style.backgroundColor = "azure"
+    color_display.textContent = ""
 
 })
 clipboard.addEventListener("click", () => {
-    let tekst = canvas.textContent
+    let tekst = color_display.textContent
     if (tekst != "") {
         
         navigator.clipboard.writeText(tekst)
