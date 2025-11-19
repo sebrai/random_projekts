@@ -75,6 +75,9 @@ button.addEventListener("click", () => {
     const item = document.createElement("li")
     item.appendChild(tekst)
     item.className = "listcolor"
+    // if (!isColorLightOrDark(c)){
+    //     item.style.backgroundColor = "var(--offwhite)"
+    // }
     item.style.borderColor = c
     item.style.color = c
     item.addEventListener("click", () => {
