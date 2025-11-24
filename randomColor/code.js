@@ -5,8 +5,8 @@ let color_log = document.getElementById("color_log")
 let clear = document.getElementById("clear")
 let clipboard = document.getElementById("clipboard")
 let colorlog = []
-const hexval = "0123456789ABCDEF"
 function randhex() {
+    const hexval = "0123456789ABCDEF"
     let num = Math.floor(Math.random() * hexval.length)
     return hexval[num]
 }
