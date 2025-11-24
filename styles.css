@@ -21,6 +21,13 @@ body{
     padding-top: 20px;
     padding-bottom: 10px;
 }
+.content{
+    margin: 0 auto;
+    width: 50%;
+}
+.title{
+    color: var(--blue);
+}
 a{
     color: var(--blue);
     text-decoration: none;
@@ -80,7 +87,7 @@ a{
     align-items: center;
 }
 
-.color_log {
+.list {
     display: flex;
     flex-direction: column-reverse;
     gap: 4px;
