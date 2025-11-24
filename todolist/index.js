@@ -28,12 +28,14 @@ function additem(item) {
         localStorage.setItem("items", JSON.stringify(par_items))
     })
     fn.appendChild(fnt)
+    e.appendChild(rm)
+    e.appendChild(fn)
     box.appendChild(e)
-    box.appendChild(rm)
-    box.appendChild(fn)
+
     if (item.done) {
         e.style.textDecoration = "line-through"
     }
+    box.className = "todo_li"
     list.appendChild(box)
 }
 

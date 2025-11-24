@@ -24,6 +24,9 @@ body{
 .content{
     margin: 0 auto;
     width: 50%;
+    background-color: var(--blue);
+    padding: 10px;
+    border-radius: 20px;
 }
 .title{
     color: var(--blue);
@@ -31,6 +34,12 @@ body{
 a{
     color: var(--blue);
     text-decoration: none;
+}
+.todo_li{
+    background-color: var(--offwhite);
+    padding: 5px;
+    border-radius: 10px;
+
 }
 .linkareas {
     background-color: var(--blue);
