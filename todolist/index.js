@@ -24,7 +24,13 @@ function additem(item) {
     let fn = document.createElement("button")
     fn.addEventListener("click", () => {
         item.done = !item.done
-        e.style.textDecoration = "line-through"
+        if (item.done) {
+            e.style.textDecoration = "line-through"
+        }
+        else{
+            e.style.textDecoration = "none"
+        }
+
         localStorage.setItem("items", JSON.stringify(par_items))
     })
     fn.appendChild(fnt)
