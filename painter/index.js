@@ -3,6 +3,7 @@ const c = document.getElementById("c")
 const ctx = c.getContext("2d")
 const paintcolors = document.getElementById("colors")
 const paintbsize =document.getElementById("strokesize")
+const clear = document.getElementById("clear")
 let isPointerDown = false
 let currcolor = "black"
 document.addEventListener('mousemove', (event) => {
@@ -88,3 +89,6 @@ for (let children = 0; children < paintbsize.children.length; children++) {
     })
     
 }
+clear.addEventListener("click",()=>{
+    ctx.clearRect(0,0,1000,560)
+})
