@@ -4,6 +4,7 @@ const ctx = c.getContext("2d")
 const paintcolors = document.getElementById("colors")
 const paintbsize =document.getElementById("strokesize")
 const clear = document.getElementById("clear")
+const downloadbtn = document.getElementById("download")
 let isPointerDown = false
 let currcolor = "black"
 document.addEventListener('mousemove', (event) => {
@@ -91,4 +92,13 @@ for (let children = 0; children < paintbsize.children.length; children++) {
 }
 clear.addEventListener("click",()=>{
     ctx.clearRect(0,0,1000,560)
+})
+downloadbtn.addEventListener("click",()=>{
+    const img_url = c.toDataURL("image/png")
+    const link = document.createElement("a")
+    link.download = "your_masterpiece.png"
+    link.href = img_url
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
 })
